@@ -1,0 +1,74 @@
+create table teams (team_key varchar(255),
+					league varchar(255),
+					owned_by varchar(255),
+					price int)
+
+insert into teams (team_key, league, owned_by, price)
+values 
+ ('Atlanta Braves', 'MLB', 'FA', 0),
+ ('St. Louis Cardinals', 'MLB', 'FA', 0),
+ ('New York Yankees', 'MLB', 'Hayden', 65),
+ ('Seattle Mariners', 'MLB', 'Evan', 3),
+ ('New York Mets', 'MLB,', 'Evan', 1),
+ ('St. Louis Blues', 'NHL', 'FA', 0),
+ ('New York Islanders', 'NHL', 'Evan', 12),
+ ('Ottawa Senators', 'NHL', 'Hayden', 1),
+ ('Oregon Ducks', 'NHL', 'Hayden', 1),
+ ('Calgary Flames', 'NHL', 'Hayden', 26),
+ ('Pittsburgh Steelers', 'NFL', 'Evan', 17),
+ ('New York Giants', 'NFL', 'Hayden', 2),
+ ('Philadelphia Eagles', 'NFL', 'Hayden', 46),
+ ('Green Bay Packers', 'NFL', 'Evan', 32),
+ ('Buffalo Bills', 'NFL', 'FA', 0),
+ ('Golden State Warriors', 'NBA', 'Evan', 86),
+ ('Sacramento Kings', 'NBA', 'Hayden', 1),
+ ('Philadelphia 76ers', 'NBA', 'Hayden', 37),
+ ('Oklahoma City Thunder', 'NBA', 'Evan', 28),
+ ('San Antonio Spurs', 'NBA', 'Evan', 8)
+
+ create table owners (owner_key varchar(255),
+ 					  username varchar(255),
+ 					  password varchar(255),
+ 					  rofl_cash int)
+
+insert into owners (owner_key, username, password, rofl_cash)
+values
+	('Hayden', 'haydenusername', 'haydenpassword', 5),
+	('Evan', 'evanusername', 'evanpassword', 10)
+
+create table current_rosters (owner_key varchar(255),
+					  active_MLB varchar(255),
+					  active_NHL varchar(255),
+					  active_NFL varchar(255),
+					  active_NBA varchar(255),
+					  active_FLEX varchar(255),
+					  bench_1 varchar(255),
+					  bench_2 varchar(255),
+					  bench_3 varchar(255)
+					  )
+
+insert into current_rosters (owner_key, active_MLB, active_NHL, active_NFL, active_NBA, active_FLEX, bench_1, bench_2, bench_3)
+values
+	('Hayden', 'New York Yankees', 'Calgary Flames', 'Philadelphia Eagles', 'Philadelphia 76ers', 
+				'New York Giants', 'Oregon Ducks', 'Ottawa Senators', 'Sacramento Kings'),
+	('Evan', 'Seattle Mariners', 'New York Islanders', 'Green Bay Packers', 'Golden State Warriors',
+				'San Antonio Spurs', 'Pittsburgh Steelers', 'New York Mets', 'Oklahoma City Thunder')
+
+create table next_rosters (owner_key varchar(255),
+					  active_MLB varchar(255),
+					  active_NHL varchar(255),
+					  active_NFL varchar(255),
+					  active_NBA varchar(255),
+					  active_FLEX varchar(255),
+					  bench_1 varchar(255),
+					  bench_2 varchar(255),
+					  bench_3 varchar(255)
+					  )
+
+insert into next_rosters (owner_key, active_MLB, active_NHL, active_NFL, active_NBA, active_FLEX, bench_1, bench_2, bench_3)
+values
+	('Hayden', 'New York Yankees', 'Calgary Flames', 'Philadelphia Eagles', 'Philadelphia 76ers', 
+				'New York Giants', 'Oregon Ducks', 'Ottawa Senators', 'Sacramento Kings'),
+	('Evan', 'Seattle Mariners', 'New York Islanders', 'Green Bay Packers', 'Golden State Warriors',
+				'San Antonio Spurs', 'Pittsburgh Steelers', 'New York Mets', 'Oklahoma City Thunder')
+
