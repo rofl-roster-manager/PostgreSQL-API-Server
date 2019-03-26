@@ -1,3 +1,6 @@
+# This is some test/demo data that I used to populate my initial postgresql database.
+# I'm using it to test out the API calls.
+
 create table teams (team_key varchar(255),
 					league varchar(255),
 					owned_by varchar(255),
