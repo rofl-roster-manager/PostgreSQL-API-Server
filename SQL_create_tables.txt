@@ -50,7 +50,7 @@ create table current_rosters (owner_key varchar(255),
 insert into current_rosters (owner_key, active_MLB, active_NHL, active_NFL, active_NBA, active_FLEX, bench_1, bench_2, bench_3)
 values
 	('Hayden', 'New York Yankees', 'Calgary Flames', 'Philadelphia Eagles', 'Philadelphia 76ers', 
-				'New York Giants', 'Oregon Ducks', 'Ottawa Senators', 'Sacramento Kings'),
+				'New York Giants', 'Anaheim Ducks', 'Ottawa Senators', 'Sacramento Kings'),
 	('Evan', 'Seattle Mariners', 'New York Islanders', 'Green Bay Packers', 'Golden State Warriors',
 				'San Antonio Spurs', 'Pittsburgh Steelers', 'New York Mets', 'Oklahoma City Thunder')
 
