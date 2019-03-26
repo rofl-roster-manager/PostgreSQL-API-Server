@@ -13,7 +13,7 @@ values
  ('St. Louis Blues', 'NHL', 'FA', 0),
  ('New York Islanders', 'NHL', 'Evan', 12),
  ('Ottawa Senators', 'NHL', 'Hayden', 1),
- ('Oregon Ducks', 'NHL', 'Hayden', 1),
+ ('Anaheim Ducks', 'NHL', 'Hayden', 1),
  ('Calgary Flames', 'NHL', 'Hayden', 26),
  ('Pittsburgh Steelers', 'NFL', 'Evan', 17),
  ('New York Giants', 'NFL', 'Hayden', 2),
